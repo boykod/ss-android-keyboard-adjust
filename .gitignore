@@ -1,0 +1,58 @@
+# OSX
+#
+.DS_Store
+
+# Xcode
+#
+build/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+*.xccheckout
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
+*.xcuserstate
+
+# Android/IntelliJ
+#
+build/
+android/app/release/
+.idea
+.gradle
+local.properties
+*.iml
+*.hprof
+*.apk
+*.aar
+*.ap_
+*.aab
+*.jks
+keystore.properties
+
+# Visual Studio Code
+#
+.vscode/
+.env
+.env.*
+coverage/
+
+# node.js
+#
+node_modules/
+npm-debug.log
+yarn-error.log
+.env.*
+
+# BUCK
+buck-out/
+\.buckd/
+*.keystore
+!debug.keystore
