@@ -9,7 +9,8 @@
     "react-native": "0.65.1"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "release-it"
   },
   "repository": {
     "type": "git",
@@ -23,5 +24,25 @@
     "activity",
     "input"
   ],
-  "homepage": "https://github.com/boykod/ss-android-keyboard-adjust#readme"
+  "homepage": "https://github.com/boykod/ss-android-keyboard-adjust#readme",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "release-it": {
+    "git": {
+      "commitMessage": "chore: release ${version}",
+      "tagName": "v${version}"
+    },
+    "npm": {
+      "publish": true
+    },
+    "github": {
+      "release": true
+    },
+    "plugins": {
+      "@release-it/conventional-changelog": {
+        "preset": "angular"
+      }
+    }
+  }
 }
